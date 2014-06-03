@@ -30,7 +30,6 @@
         NSLog(@"%d %d", picker.selectedRow0, picker.selectedRow1);
     } cancelEvent:^(id sender) {
     }];
-
 }
 
 @end
