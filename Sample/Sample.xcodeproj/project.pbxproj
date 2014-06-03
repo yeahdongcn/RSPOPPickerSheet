@@ -21,9 +21,9 @@
 		D0232D81193D915700976ECA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0232D63193D915700976ECA /* UIKit.framework */; };
 		D0232D89193D915700976ECA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0232D87193D915700976ECA /* InfoPlist.strings */; };
 		D0232D8B193D915700976ECA /* SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0232D8A193D915700976ECA /* SampleTests.m */; };
-		D0232D9A193D926A00976ECA /* RSPickerSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = D0232D96193D926A00976ECA /* RSPickerSheet.m */; };
-		D0232D9B193D926A00976ECA /* RSPickerSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0232D97193D926A00976ECA /* RSPickerSheet.xib */; };
-		D0232D9C193D926A00976ECA /* RSPlainButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D0232D99193D926A00976ECA /* RSPlainButton.m */; };
+		D0232DA3193D9F6F00976ECA /* RSPickerSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = D0232D9F193D9F6F00976ECA /* RSPickerSheet.m */; };
+		D0232DA4193D9F6F00976ECA /* RSPickerSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0232DA0193D9F6F00976ECA /* RSPickerSheet.xib */; };
+		D0232DA5193D9F6F00976ECA /* RSPlainButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D0232DA2193D9F6F00976ECA /* RSPlainButton.m */; };
 		FF4FCFEF2E854F979530AA1D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BADF46F71545C7905B5E87 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,11 +59,11 @@
 		D0232D86193D915700976ECA /* SampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleTests-Info.plist"; sourceTree = "<group>"; };
 		D0232D88193D915700976ECA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D0232D8A193D915700976ECA /* SampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleTests.m; sourceTree = "<group>"; };
-		D0232D95193D926A00976ECA /* RSPickerSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSPickerSheet.h; sourceTree = "<group>"; };
-		D0232D96193D926A00976ECA /* RSPickerSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSPickerSheet.m; sourceTree = "<group>"; };
-		D0232D97193D926A00976ECA /* RSPickerSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSPickerSheet.xib; sourceTree = "<group>"; };
-		D0232D98193D926A00976ECA /* RSPlainButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSPlainButton.h; sourceTree = "<group>"; };
-		D0232D99193D926A00976ECA /* RSPlainButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSPlainButton.m; sourceTree = "<group>"; };
+		D0232D9E193D9F6F00976ECA /* RSPickerSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSPickerSheet.h; sourceTree = "<group>"; };
+		D0232D9F193D9F6F00976ECA /* RSPickerSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSPickerSheet.m; sourceTree = "<group>"; };
+		D0232DA0193D9F6F00976ECA /* RSPickerSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSPickerSheet.xib; sourceTree = "<group>"; };
+		D0232DA1193D9F6F00976ECA /* RSPlainButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSPlainButton.h; sourceTree = "<group>"; };
+		D0232DA2193D9F6F00976ECA /* RSPlainButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSPlainButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +126,7 @@
 		D0232D65193D915700976ECA /* Sample */ = {
 			isa = PBXGroup;
 			children = (
-				D0232D94193D926A00976ECA /* Classes */,
+				D0232D9D193D9F6600976ECA /* Classes */,
 				D0232D6E193D915700976ECA /* RSAppDelegate.h */,
 				D0232D6F193D915700976ECA /* RSAppDelegate.m */,
 				D0232D71193D915700976ECA /* Main.storyboard */,
@@ -167,16 +167,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D0232D94193D926A00976ECA /* Classes */ = {
+		D0232D9D193D9F6600976ECA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D0232D95193D926A00976ECA /* RSPickerSheet.h */,
-				D0232D96193D926A00976ECA /* RSPickerSheet.m */,
-				D0232D97193D926A00976ECA /* RSPickerSheet.xib */,
-				D0232D98193D926A00976ECA /* RSPlainButton.h */,
-				D0232D99193D926A00976ECA /* RSPlainButton.m */,
+				D0232D9E193D9F6F00976ECA /* RSPickerSheet.h */,
+				D0232D9F193D9F6F00976ECA /* RSPickerSheet.m */,
+				D0232DA0193D9F6F00976ECA /* RSPickerSheet.xib */,
+				D0232DA1193D9F6F00976ECA /* RSPlainButton.h */,
+				D0232DA2193D9F6F00976ECA /* RSPlainButton.m */,
 			);
-			path = Classes;
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +260,8 @@
 			files = (
 				D0232D78193D915700976ECA /* Images.xcassets in Resources */,
 				D0232D6A193D915700976ECA /* InfoPlist.strings in Resources */,
+				D0232DA4193D9F6F00976ECA /* RSPickerSheet.xib in Resources */,
 				D0232D73193D915700976ECA /* Main.storyboard in Resources */,
-				D0232D9B193D926A00976ECA /* RSPickerSheet.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,11 +313,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0232D9C193D926A00976ECA /* RSPlainButton.m in Sources */,
 				D0232D6C193D915700976ECA /* main.m in Sources */,
 				D0232D70193D915700976ECA /* RSAppDelegate.m in Sources */,
+				D0232DA5193D9F6F00976ECA /* RSPlainButton.m in Sources */,
+				D0232DA3193D9F6F00976ECA /* RSPickerSheet.m in Sources */,
 				D0232D76193D915700976ECA /* RSViewController.m in Sources */,
-				D0232D9A193D926A00976ECA /* RSPickerSheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

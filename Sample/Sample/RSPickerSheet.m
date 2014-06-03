@@ -1,16 +1,21 @@
 //
-//  ZSHPickerSheet.m
-//  zsh
+//  RSPickerSheet.m
+//  RSPOPPickerSheet
 //
 //  Created by R0CKSTAR on 5/28/14.
-//  Copyright (c) 2014 anewlives. All rights reserved.
+//  Copyright (c) 2014 P.D.Q. All rights reserved.
 //
 
-#import "ZSHPickerSheet.h"
+#import "RSPickerSheet.h"
+
+#import "RSPlainButton.h"
 
 #import <POP.h>
 
-@interface ZSHPickerSheet () <UIPickerViewDataSource, UIPickerViewDelegate, UIGestureRecognizerDelegate>
+#define SharedWindow ((UIWindow *)[[[UIApplication sharedApplication] delegate] window])
+#define UIKitLocalizedString(key) [[NSBundle bundleWithIdentifier:@"com.apple.UIKit"] localizedStringForKey:key value:@"" table:nil]
+
+@interface RSPickerSheet () <UIPickerViewDataSource, UIPickerViewDelegate, UIGestureRecognizerDelegate>
 
 @property (nonatomic, weak) IBOutlet UIView *background;
 
@@ -22,15 +27,15 @@
 
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint *bottom;
 
-@property (nonatomic, weak) ZSHPlainButton *cancel;
+@property (nonatomic, weak) RSPlainButton *cancel;
 
-@property (nonatomic, weak) ZSHBoldPlainButton *done;
+@property (nonatomic, weak) RSBoldPlainButton *done;
 
 @property (nonatomic, copy) ActionEvent launchEvent;
 
 @end
 
-@implementation ZSHPickerSheet
+@implementation RSPickerSheet
 
 - (void)dismiss
 {
@@ -88,18 +93,18 @@
     };
     
     self.background.layer.opacity = 0;
-    self.background.backgroundColor = [UIColor colorWithHexString:[SharedUiss.variablesPreprocessor getValueForVariableWithName:@"black"]];
+    self.background.backgroundColor = [UIColor blackColor];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
     [self.background addGestureRecognizer:tap];
     
-    self.cancel = [ZSHPlainButton button];
+    self.cancel = [RSPlainButton button];
     [self.cancel setTitle:UIKitLocalizedString(@"Cancel") forState:UIControlStateNormal];
     self.cancel.click = ^(id sender) {
         [self dismiss];
     };
     [self.cancel sizeToFit];
     
-    self.done = [ZSHBoldPlainButton button];
+    self.done = [RSBoldPlainButton button];
     [self.done setTitle:UIKitLocalizedString(@"Done") forState:UIControlStateNormal];
     self.done.click = ^(id sender) {
         [self dismiss];
@@ -178,10 +183,6 @@
         label = (UILabel *)view;
     } else {
         label = [[UILabel alloc] initWithFrame:CGRectZero];
-        label.textColor = [UIColor colorWithHexString:[SharedUiss.variablesPreprocessor getValueForVariableWithName:@"gray_light"]];
-        label.font = [UIFont systemFontOfSize:[[SharedUiss.variablesPreprocessor getValueForVariableWithName:@"font_24"] floatValue]];
-        NSArray *shadowOffset = [SharedUiss.variablesPreprocessor getValueForVariableWithName:@"shadowOffsetZero"];
-        label.shadowOffset = CGSizeMake([shadowOffset[0] floatValue], [shadowOffset[1] floatValue]);
     }
     
     if ([self.data isKindOfClass:[NSArray class]]) {

@@ -1,16 +1,16 @@
 //
-//  ZSHPlainButton.m
-//  zsh
+//  RSPlainButton.m
+//  RSPOPPickerSheet
 //
 //  Created by R0CKSTAR on 5/22/14.
-//  Copyright (c) 2014 anewlives. All rights reserved.
+//  Copyright (c) 2014 P.D.Q. All rights reserved.
 //
 
-#import "ZSHPlainButton.h"
+#import "RSPlainButton.h"
 
 #import <POP.h>
 
-@implementation ZSHPlainButton
+@implementation RSPlainButton
 
 + (instancetype)button
 {
@@ -80,6 +80,17 @@
 - (void)awakeFromNib
 {
     [self setup];
+}
+
+@end
+
+@implementation RSBoldPlainButton
+
++ (instancetype)button
+{
+    RSBoldPlainButton *button = [super button];
+    button.titleLabel.font = [UIFont boldSystemFontOfSize:button.titleLabel.font.pointSize];
+    return button;
 }
 
 @end
