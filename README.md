@@ -26,19 +26,19 @@ Provide a new `showInView` and `DO NOT` forget to call `[super showInView:view]`
 
 	- (void)showInView:(UIView *)view doneEvent:(ActionEvent)doneEvent cancelEvent:(ActionEvent)cancelEvent
 	{
-    	self.cancel.click = ^(id sender) {
+    	    self.cancel.click = ^(id sender) {
         	if (cancelEvent) {
             	cancelEvent(self);
         	}
         	[self dismiss];
-    	};
-    	self.done.click = ^(id sender) {
+    	    };
+    	    self.done.click = ^(id sender) {
         	if (doneEvent) {
             	doneEvent(self);
         	}
         	[self dismiss];
-    	};
-    [super showInView:view];
+    	    };
+            [super showInView:view];
 	}
 
 
