@@ -3,7 +3,7 @@ RSPOPPickerSheet
 
 Fullscreen pop-able and block-able picker sheet.
 
-#### Plugin screenshot
+#### Control gif video (not clear enough, better try the sample :))
 ![screenshot](https://raw.githubusercontent.com/yeahdongcn/RSPOPPickerSheet/master/video.gif)
 
 ##PROBLEM
