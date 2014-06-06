@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RSPOPPickerSheet"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Fullscreen pop-able and block-able picker sheet."
   s.homepage     = "https://github.com/yeahdongcn/RSPOPPickerSheet"
   s.license      = { :type => 'MIT', :file => 'LICENSE.md' }
