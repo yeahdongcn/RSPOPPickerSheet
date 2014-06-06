@@ -20,6 +20,8 @@ As we all know, the `UIActionSheet` can't be dragged into a empty xib, but `UIVi
 
 Use [pop](https://github.com/facebook/pop).
 
+Add [pop](https://github.com/facebook/pop) to almost everything, button pressing and clicking, background alpha changing and picker frame changing, make it more lively.
+
 ##MAKE IT BLOCK-ABLE
 
 Provide a new `showInView` and `DO NOT` forget to call `[super showInView:view]`
