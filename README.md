@@ -4,7 +4,7 @@ RSPOPPickerSheet
 Fullscreen pop-able and block-able picker sheet.
 
 #### Plugin screenshot
-![screenshot](https://raw.githubusercontent.com/yeahdongcn/RSPOPPickerSheet/master/iOS%20Simulator%20Screen%20shot%20Jun%203,%202014,%201.49.06%20PM.png)
+![screenshot](https://raw.githubusercontent.com/yeahdongcn/RSPOPPickerSheet/master/video.gif)
 
 ##PROBLEM
 
