@@ -28,13 +28,13 @@ Provide a new `showInView` and `DO NOT` forget to call `[super showInView:view]`
 	{
     	    self.cancel.click = ^(id sender) {
         	if (cancelEvent) {
-            	cancelEvent(self);
+            	    cancelEvent(self);
         	}
         	[self dismiss];
     	    };
     	    self.done.click = ^(id sender) {
         	if (doneEvent) {
-            	doneEvent(self);
+            	    doneEvent(self);
         	}
         	[self dismiss];
     	    };
