@@ -27,7 +27,6 @@
                     @"normal": @[@"item0", @"item1", @"item2"],
                     @"big": @[@"item0", @"item1", @"item2"]};
     [picker showInView:self.view doneEvent:^(id sender) {
-        NSLog(@"%d %d", picker.selectedRow0, picker.selectedRow1);
     } cancelEvent:^(id sender) {
     }];
 }

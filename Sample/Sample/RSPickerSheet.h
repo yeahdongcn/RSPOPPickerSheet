@@ -16,9 +16,9 @@
 
 @property (nonatomic, strong) id data;
 
-@property (nonatomic) int selectedRow0;
+@property (nonatomic) NSInteger selectedRow0;
 
-@property (nonatomic) int selectedRow1;
+@property (nonatomic) NSInteger selectedRow1;
 
 - (void)showInView:(UIView *)view doneEvent:(ActionEvent)doneEvent cancelEvent:(ActionEvent)cancelEvent;
 
