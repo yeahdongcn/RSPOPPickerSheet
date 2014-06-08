@@ -1,6 +1,9 @@
 RSPOPPickerSheet
 ================
 
+[![Total views](https://sourcegraph.com/api/repos/github.com/yeahdongcn/RSPOPPickerSheet/counters/views.png)](https://sourcegraph.com/github.com/yeahdongcn/RSPOPPickerSheet)
+[![Views in the last 24 hours](https://sourcegraph.com/api/repos/github.com/yeahdongcn/RSPOPPickerSheet/counters/views-24h.png)](https://sourcegraph.com/github.com/yeahdongcn/RSPOPPickerSheet)
+
 Fullscreen pop-able and block-able picker sheet.
 
 #### Control gif video (not clear enough, better try the sample :))
